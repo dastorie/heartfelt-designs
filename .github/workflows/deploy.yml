@@ -29,6 +29,7 @@ jobs:
         run: npm install
 
       - name: Fetch Etsy Patterns
+        continue-on-error: true
         env:
           ETSY_API_KEY: ${{ secrets.ETSY_API_KEY }}
         run: node scripts/fetch-etsy-api.js
