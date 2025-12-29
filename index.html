@@ -60,20 +60,69 @@
             <div class="section-divider"></div>
             <div class="teaching-content" id="teaching-content"></div>
         </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <div class="section-divider"></div>
+            <p
+                style="text-align: center; margin-bottom: 2rem; color: var(--text-light); max-width: 600px; margin-left: auto; margin-right: auto;">
+                Have a question about a pattern or interested in a workshop? Send me a message and I'll get back to you
+                soon!
+            </p>
+            <form id="contact-form" action="https://formspree.io/f/mdaowbrl" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="buy-btn">Send Message</button>
+            </form>
+        </section>
     </main>
 
-    <footer id="contact">
-        <h2>Get In Touch</h2>
-        <div class="contact-info">
-            <p id="footer-email"></p>
-            <p id="footer-phone"></p>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <div class="contact-info">
+                    <p id="footer-email"></p>
+                    <p id="footer-phone"></p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="https://www.etsy.com/ca/shop/HeartfeltDesigns1" target="_blank" class="social-link"
+                        aria-label="Visit our Etsy shop">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M7.5 2C4.5 2 2 4.5 2 7.5v9C2 19.5 4.5 22 7.5 22h9c3 0 5.5-2.5 5.5-5.5v-9C22 4.5 19.5 2 16.5 2h-9zm10.5 4h1.5v1.5H18V6zm-1.5 3c.8 0 1.5.7 1.5 1.5v3c0 .8-.7 1.5-1.5 1.5h-9C6.7 15 6 14.3 6 13.5v-3C6 9.7 6.7 9 7.5 9h9z" />
+                        </svg>
+                        <span>Etsy Shop</span>
+                    </a>
+                    <a href="https://www.facebook.com/p/Heartfelt-Designs-by-Carol-Storie-100046183315408/"
+                        target="_blank" class="social-link" aria-label="Visit our Facebook page">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                        <span>Facebook</span>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="social-links">
-            <a href="https://www.etsy.com/ca/shop/HeartfeltDesigns1" target="_blank">Etsy Shop</a>
-            <a href="https://eac-acb.ca/" target="_blank">EAC Partner</a>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Heartfelt Designs. All rights reserved.</p>
         </div>
-        <p style="margin-top: 3rem; opacity: 0.6; font-size: 0.8rem;">&copy; <span id="year"></span> Heartfelt Designs.
-            All rights reserved.</p>
     </footer>
 
     <script type="module" src="./main.js"></script>

@@ -28,10 +28,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # Note: The Etsy scraper is currently manual/browser-based due to 403 blocks.
-      # For a fully automated monthly update, an Etsy API Key would be required.
-      # - name: Fetch Etsy Patterns
-      #   run: node scripts/fetch_etsy.cjs
+      - name: Fetch Etsy Patterns
+        env:
+          ETSY_API_KEY: ${{ secrets.ETSY_API_KEY }}
+        run: node scripts/fetch-etsy-api.js
 
       - name: Build
         run: npm run build
