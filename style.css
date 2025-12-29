@@ -488,4 +488,46 @@ footer::before {
     flex: 0 0 auto;
     width: 150px;
   }
+
+  /* Pattern grid - 3 columns on tablet */
+  .pattern-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .pattern-info h3 {
+    font-size: 1rem;
+    min-height: 2.5rem;
+  }
+
+  .pattern-info {
+    padding: 1rem;
+  }
+
+  .buy-btn {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Pattern grid - 2 columns on small mobile */
+  .pattern-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .pattern-info h3 {
+    font-size: 0.95rem;
+    min-height: auto;
+  }
+
+  section {
+    padding: 3rem 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
 }
